@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurante La Hacienda &mdash; Tampa, FL</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#FBF6EA;color:#2b2b2b;line-height:1.55}
+.demo-bar{background:#1b1b1b;color:#f5c542;text-align:center;font-size:12px;padding:8px 12px;letter-spacing:1px;font-weight:bold}
+.hero{background:linear-gradient(rgba(25,12,4,.78),rgba(25,12,4,.78)),repeating-linear-gradient(45deg,#5C3A1E,#5C3A1E 18px,#6b4423 18px,#6b4423 36px);color:#fff;text-align:center;padding:44px 20px 46px}
+.hero img.perfil{width:120px;height:120px;border-radius:50%;border:4px solid #C9A227;object-fit:cover;margin-bottom:12px}
+.hero h1{font-size:36px;letter-spacing:1px;margin-bottom:4px}
+.hero h1 .ama{color:#C9A227}
+.hero .slogan{font-size:19px;font-weight:bold;color:#C9A227;margin-bottom:8px}
+.hero p{font-size:15px;opacity:.93;margin-bottom:22px;max-width:480px;margin-left:auto;margin-right:auto}
+.btn{display:inline-block;background:#C9A227;color:#1b1b1b;font-weight:bold;text-decoration:none;padding:14px 28px;border-radius:30px;margin:6px;font-size:16px}
+.btn.sec{background:transparent;color:#fff;border:2px solid #C9A227}
+.btn.verde{background:#25D366;color:#fff}
+
+
+.strip{background:#1b1b1b;color:#fff;text-align:center;padding:14px;font-size:14px}
+.strip b{color:#C9A227}
+section{max-width:640px;margin:0 auto;padding:34px 20px}
+h2{font-size:24px;margin-bottom:4px;color:#5C3A1E}
+.sub{color:#8a6d4a;margin-bottom:20px;font-size:14px}
+.cat{margin-bottom:22px}
+.cat h3{background:#5C3A1E;color:#fff;display:inline-block;padding:5px 16px;border-radius:20px;font-size:15px;margin-bottom:10px}
+.item{display:flex;justify-content:space-between;gap:12px;padding:9px 2px;border-bottom:1px dashed #d9c6a8}
+.item .nombre{font-weight:600}
+.item .fav{font-size:11px;background:#7A1F1F;color:#fff;font-weight:bold;border-radius:10px;padding:1px 8px;margin-left:6px;vertical-align:middle}
+.item .desc{font-size:13px;color:#8a6d4a}
+.item .precio{font-weight:bold;color:#5C3A1E;white-space:nowrap}
+.info-card{background:#fff;border:1px solid #eadfc8;border-radius:14px;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.info-card b{color:#5C3A1E}
+.orden{background:#5C1F1F;color:#fff;text-align:center}
+.orden h2{color:#C9A227}
+.orden .sub{color:#e8d5c5}
+.evento{background:#fff8ec;border-top:3px solid #C9A227;border-bottom:3px solid #C9A227}
+.review{background:#fff;border:1px solid #eadfc8;border-radius:14px;padding:18px;margin-bottom:12px}
+.review .stars{color:#e8a013;font-size:15px;letter-spacing:2px}
+.review .quien{font-size:13px;color:#8a6d4a;margin-top:8px;font-weight:600}
+.qr-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:16px}
+.qr-card{background:#fff;border:2px solid #C9A227;border-radius:14px;padding:14px 8px;text-align:center}
+.qr-card img{width:100%;max-width:150px;height:auto;border-radius:8px}
+.qr-card p{font-size:12px;font-weight:bold;margin-top:8px;color:#5C3A1E}
+@media(max-width:480px){.qr-grid{grid-template-columns:1fr}.qr-card img{max-width:180px}}
+.social{text-align:center;margin-top:14px}
+.social a{display:inline-block;margin:0 10px;color:#5C3A1E;font-weight:bold;text-decoration:none;font-size:15px}
+footer{background:#1b1b1b;color:#cbb98a;text-align:center;padding:26px 16px;font-size:13px}
+footer b{color:#C9A227}
+.aviso{background:#fff3d6;border:1px solid #C9A227;border-radius:10px;padding:10px 14px;font-size:12px;color:#7a5a10;margin-top:14px}
+.chip{border:1px solid #C9A227;color:#F5EFE0;border-radius:20px;padding:8px 16px;font-size:13px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="demo-bar">&#9733; P&Aacute;GINA DEMO &mdash; AS&Iacute; SE VER&Iacute;A LA WEB DE TU NEGOCIO &#9733;</div>
+<div style="display:flex;height:10px"><div style="flex:2;background:#FCD116"></div><div style="flex:1;background:#003893"></div><div style="flex:1;background:#CE1126"></div></div>
+
+<div class="hero">
+<img class="perfil" src="data:image/jpeg;base64,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" alt="Restaurante La Hacienda">
+<h1>RESTAURANTE <span class="ama">LA HACIENDA</span></h1>
+<div class="slogan">COMO COMER EN CASA</div><div style="display:inline-flex;align-items:center;gap:8px;margin:10px 0 4px;background:rgba(0,0,0,.35);border:1px solid #C9A227;border-radius:20px;padding:6px 14px;font-size:13px;font-weight:bold;letter-spacing:1px"><span style="display:inline-flex;flex-direction:column;width:26px;height:18px;border-radius:3px;overflow:hidden;border:1px solid #fff"><span style="flex:1;background:#fff"></span><span style="flex:1;background:#00843D"></span></span>DE ANTIOQUIA PARA TAMPA</div><br>
+<p>Fieles a nuestras ra&iacute;ces antioque&ntilde;as: lo mejor de la comida colombiana, con la atenci&oacute;n especial que nos caracteriza.</p>
+<a class="btn verde" href="#ordenar">Ordenar online</a>
+<a class="btn" href="#menu">Ver men&uacute;</a><br>
+<a class="btn sec" href="tel:+18133041766">Llamar</a>
+</div>
+
+<div class="strip"><b>Cocina colombiana tradicional</b> &middot; Desayunos, almuerzos y panader&iacute;a &middot; Tampa, FL</div>
+
+<section id="menu">
+<h2>Nuestro men&uacute;</h2>
+<p class="sub">Men&uacute; online &mdash; siempre actualizado. Escanea el QR de tu mesa para verlo.</p>
+<div class="cat"><h3>Desayunos colombianos</h3>
+<div class="item"><div><div class="nombre">Calentado paisa</div><div class="desc">Fr&iacute;joles, arroz, huevo, arepa y queso</div></div><div class="precio">$9.99</div></div>
+<div class="item"><div><div class="nombre">Desayuno monta&ntilde;ero</div><div class="desc">Huevos al gusto, chicharr&oacute;n, arepa y chocolate</div></div><div class="precio">$10.99</div></div>
+</div>
+<div class="cat"><h3>Platos fuertes</h3>
+<div class="item"><div><div class="nombre">Bandeja paisa <span class="fav">LA FAVORITA</span></div><div class="desc">Fr&iacute;joles, arroz, chicharr&oacute;n, carne molida, huevo frito, pl&aacute;tano, arepa y aguacate</div></div><div class="precio">$16.99</div></div>
+<div class="item"><div><div class="nombre">Sancocho trif&aacute;sico</div><div class="desc">Res, pollo y cerdo con yuca, pl&aacute;tano y mazorca</div></div><div class="precio">$14.99</div></div>
+<div class="item"><div><div class="nombre">Mondongo antioque&ntilde;o</div><div class="desc">Sopa tradicional con arroz y arepa</div></div><div class="precio">$14.99</div></div>
+<div class="item"><div><div class="nombre">Arroz con pollo</div><div class="desc">El cl&aacute;sico de la casa con papas y ensalada</div></div><div class="precio">$12.99</div></div>
+<div class="item"><div><div class="nombre">Pescado frito</div><div class="desc">Con patac&oacute;n, arroz con coco y ensalada</div></div><div class="precio">$15.99</div></div>
+</div>
+<div class="cat"><h3>Antojitos y panader&iacute;a</h3>
+<div class="item"><div><div class="nombre">Empanadas (3)</div><div class="desc">De carne o pollo, con aj&iacute; de la casa</div></div><div class="precio">$5.99</div></div>
+<div class="item"><div><div class="nombre">Pandebono</div><div class="desc">Reci&eacute;n horneado, todos los d&iacute;as</div></div><div class="precio">$2.50</div></div>
+<div class="item"><div><div class="nombre">Arepa de queso</div><div class="desc">Asada al momento</div></div><div class="precio">$3.50</div></div>
+<div class="item"><div><div class="nombre">Salchipapa</div><div class="desc">Para compartir (o no)</div></div><div class="precio">$8.99</div></div>
+</div>
+<div class="cat"><h3>Bebidas</h3>
+<div class="item"><div><div class="nombre">Jugos naturales</div><div class="desc">Mora, maracuy&aacute;, lulo, guan&aacute;bana</div></div><div class="precio">$4.50</div></div>
+<div class="item"><div><div class="nombre">Limonada de coco</div><div class="desc">La favorita de la casa</div></div><div class="precio">$5.00</div></div>
+<div class="item"><div><div class="nombre">Tinto colombiano</div><div class="desc">Caf&eacute; reci&eacute;n hecho</div></div><div class="precio">$2.00</div></div>
+</div>
+<div class="aviso">Precios de muestra para la demo &mdash; se ajustan con el men&uacute; real del restaurante.</div>
+</section>
+
+<section class="orden" id="ordenar" style="max-width:100%">
+<div style="max-width:640px;margin:0 auto;padding:0 20px">
+<h2>Ordena como quieras</h2>
+<p class="sub">Recoge en el local o rec&iacute;belo en tu puerta</p>
+<a class="btn verde" href="#">Delivery</a>
+<a class="btn" href="#">Para recoger</a>
+<p class="sub" style="margin-top:14px;margin-bottom:0">Tambi&eacute;n en Uber Eats y DoorDash</p>
+</div>
+</section>
+
+<section class="evento" style="max-width:100%">
+<div style="max-width:640px;margin:0 auto;padding:0 20px">
+<h2>Aqu&iacute; se vive Colombia</h2>
+<p class="sub">Partidos en pantalla gigante, m&uacute;sica y ambiente familiar. Reserva tu mesa para los d&iacute;as de partido.</p>
+<a class="btn" href="tel:+18133041766">Reservar mesa</a>
+</div>
+</section>
+
+<section>
+<h2>Lo que dicen en Google</h2>
+<p class="sub">Rese&ntilde;as de nuestros clientes</p>
+<div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>&ldquo;Se siente como comer en casa de la abuela. La bandeja paisa es enorme y el sancocho me record&oacute; a Medell&iacute;n.&rdquo;<div class="quien">&mdash; Rese&ntilde;a de Google</div></div>
+<div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>&ldquo;Atenci&oacute;n muy especial, te hacen sentir en familia. El pandebono reci&eacute;n horneado es obligado.&rdquo;<div class="quien">&mdash; Rese&ntilde;a de Google</div></div>
+<div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>&ldquo;El mejor desayuno colombiano en Tampa. El calentado con chocolate es perfecto.&rdquo;<div class="quien">&mdash; Rese&ntilde;a de Google</div></div>
+</section>
+
+<section>
+<h2>Nuestra historia</h2>
+<p class="sub" style="margin-bottom:0">Somos una familia paisa que trajo de las monta&ntilde;as de Antioquia a Tampa las recetas de la casa: fr&iacute;joles espesos, arepas asadas al momento y ese saz&oacute;n que abraza. Aqu&iacute; no eres un cliente m&aacute;s &mdash; eres de la familia.</p>
+</section>
+
+
+<section class="paisa" style="max-width:100%;background:#1b1b1b;color:#fff;text-align:center">
+<div style="max-width:640px;margin:0 auto;padding:0 20px">
+<h2 style="color:#C9A227">Rinc&oacute;n paisa</h2>
+<p class="sub" style="color:#cbb98a">Los s&iacute;mbolos de nuestra tierra, en cada detalle</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+<span class="chip">Sombrero aguade&ntilde;o</span>
+<span class="chip">Carriel paisa</span>
+<span class="chip">Caf&eacute; de las monta&ntilde;as</span>
+<span class="chip">Flores de Medell&iacute;n</span>
+<span class="chip">Bandeja paisa</span>
+<span class="chip">Arrier&iacute;a antioque&ntilde;a</span>
+</div>
+</div>
+</section>
+<section>
+<h2>Horario y ubicaci&oacute;n</h2>
+<p class="sub">Vis&iacute;tanos &mdash; te esperamos como en casa</p>
+<div class="info-card"><b>Direcci&oacute;n:</b> 7532 N Armenia Ave, Tampa, FL 33604<br><a href="https://www.google.com/maps/search/Restaurante+La+Hacienda+7532+N+Armenia+Ave+Tampa+FL" style="color:#5C3A1E;font-weight:bold">C&oacute;mo llegar &rarr;</a></div>
+<div class="info-card"><b>Horario:</b> Dom 7am&ndash;6:30pm &middot; Lun&ndash;Jue 7am&ndash;7:30pm &middot; Vie&ndash;S&aacute;b 7am&ndash;10:30pm</div>
+<div class="info-card"><b>Tel&eacute;fono:</b> (813) 304-1766</div>
+<div class="social"><a href="https://www.instagram.com/lahaciendatampa">Instagram</a><a href="https://www.facebook.com/636242976802758">Facebook</a></div>
+</section>
+
+<section>
+<h2>Tus c&oacute;digos QR</h2>
+<p class="sub">As&iacute; se entregan impresos para tus mesas, tu puerta y tus bolsas.</p>
+<div class="qr-grid">
+<div class="qr-card"><img src="" alt="QR p&aacute;gina web"><p>Escanea para ver nuestra p&aacute;gina</p></div>
+<div class="qr-card"><img src="" alt="QR men&uacute;"><p>Escanea para ver el men&uacute;</p></div>
+<div class="qr-card"><img src="" alt="QR rese&ntilde;a Google"><p>D&eacute;janos tu rese&ntilde;a en Google</p></div>
+</div>
+</section>
+
+<div style="display:flex;height:10px"><div style="flex:2;background:#FCD116"></div><div style="flex:1;background:#003893"></div><div style="flex:1;background:#CE1126"></div></div>
+<footer>
+<b>RESTAURANTE LA HACIENDA</b> &mdash; Tampa, FL<br>
+P&aacute;gina demo del paquete web &middot; Hecho por <b>Lester Manzano</b> &middot; 813 235 3313
+</footer>
+</body>
+</html>
